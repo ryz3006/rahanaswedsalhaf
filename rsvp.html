@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<!-- Mirrored from themes.sindevo.com/the-wedding-date/the-wedding-date-06/rsvp.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 15 Feb 2020 10:05:08 GMT -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width; initial-scale=1; maximum-scale=1" />
+<meta name="author" content="RIYAS SIDDIKK" />
+<meta name="description" content="Rahanas weds Althaf" />
+<meta name="keywords" content="the wedding date, Rahanas weds Althaf, Rahanas, Althaf" />
+<title>Rahanas weds Althaf</title>
+<link rel="stylesheet" type="text/css" media="all" href="style.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/animsition.min.css" />
+<link rel="stylesheet" href="css/jquery-ui.min.css">
+<link rel="stylesheet" href="css/wedding.datepicker.css">
+<link href='http://fonts.googleapis.com/css?family=Clicker+Script' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700,900' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div id="pagecontainer" class="animsition">     
+        
+<nav id="main_menu" class="menugray">                                                                   
+	<ul>
+		<li><a class="fade-page" href="index-2.html"><span data-hover="HOME">HOME</span></a></li>
+		<li class="menu-item-has-children"><a><span data-hover="THE WEDDING">THE WEDDING</span></a>
+			<ul class="sub-menu menuwhite">
+				<li><a href="page.html" class="fade-page">CEREMONY</a></li>
+				<li><a href="page.html" class="fade-page">LOCATION</a></li>
+
+			</ul>
+		</li>
+	<li><a href="layout.html" class="fade-page"><span data-hover="REACH US">REACH US</span></a></li> 
+		
+	</ul>
+</nav>  
+
+<div class="section_centered">
+
+           <h3 class="form_subtitle">GUEST DETAILS &amp; COMMENTS</h3>
+                <div class="form_section">
+                    <div class="form_row left13">
+                    <label>NAME</label>
+                    <input type="text" class="form_input required" name="rsvpname" id="rsvpname" />
+                    </div>
+                    <div class="form_row left13">
+                    <label>EMAIL</label>
+                    <input type="text" class="form_input required email" name="rsvpemail" id="rsvpemail" />
+                    </div>
+                    <div class="form_row left13_last">
+                    <label>PHONE</label>
+                    <input type="text" class="form_input required" name="rsvpphone" id="rsvpphone" />
+                    </div>
+                    <div class="form_row_full">
+                    <label>WISHES and COMMENTS</label>
+                    <textarea class="form_textarea_full" name="rsvpcomments" id="rsvpcomments"></textarea>
+                    </div>
+                    <div class="form_row">
+                    <input type="submit" name="submit" class="form_submit_contact" id="submit" value="SEND Comments and Wishes" />
+                    <input class="" type="hidden" name="to"  value="riyass.ayath@gmail.com" />
+                    <input class="" type="hidden" name="subject" value="Wishes and Comments" />
+                    <label id="loader" style="display:none;"><img src="images/loader.gif" alt="Loading..." id="LoadingGraphic" /></label> 
+                    </div> 
+               </div>
+                
+                </form>
+        </div>  
+
+		 
+		   
+</div><!-- End of content-->   
+		   
+ <div id="footer">          
+  <div class="section_centered">
+  
+		<div class="footer_centered_title">
+			<h2>RAHANAS <span>and </span> ALTHAF</h2>
+		</div>
+		
+		
+		<div class="footer_menu">
+			<ul>
+				<li><a href="page.html" class="fade-page"><span>Wedding</span></a></li>
+				<li><a href="page.html" class="fade-page"><span>Home</span></a></li>
+				<li><a href="rsvp.html" class="fade-page"><span>Wish US</span></a></li>
+			</ul>
+		</div>
+
+</div>	
+</div>
+</div>       
+<!-- End of Footer -->	        
+       
+</div> <!--End of container-->
+<!-- jQuery -->
+<script type="text/javascript" src="js/jquery-1.12.4.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/animsition.min.js"></script>
+<script type="text/javascript" src="js/menu.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript">
+$("#main_menu").menumaker({
+format: "multitoggle",
+sticky: true
+});
+</script>
+<script type="text/javascript" charset="utf-8">
+var $ = jQuery.noConflict();
+  $(window).load(function() {
+    "use strict";
+	$("#RSVPForm").validate({
+	submitHandler: function(form) {
+	ajaxContact(form);
+	return false;
+	}
+	});
+
+  });
+</script>
+<script type="text/javascript" src="js/email.js"></script>
+</body>
+
+
+</html>
